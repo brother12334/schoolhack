@@ -1,0 +1,19 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 23 Nov 2024 23:17:48 at https://spacebartest.org/1v1-lol-unblocked +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://spacebartest.org/1v1-lol-unblocked -O1 "C:\My Web Sites\ee3" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+23:18:50	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://spacebartest.org/)
+23:18:51	Error: 	"Not Found" (404) at link https://spacebartest.org/spacebar-200-in-hits-20-seconds (from https://spacebartest.org/spacebar-200-hits-in-20-seconds)
+23:18:55	Error: 	"Not Found" (404) at link https://spacebartest.org/static/assets/image/banner.png (from https://spacebartest.org/dinosaur-game)
+23:18:56	Warning: 	Link https://spacebartest.org/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+23:18:56	Error: 	"Not Found" (404) at link https://spacebartest.org/css/..static/assets/default_100_percent/100-error-offline.png (from https://spacebartest.org/css/dino.css)
+23:18:56	Error: 	"Not Found" (404) at link https://spacebartest.org/static/assets/default_200_percent/200-error-offline.png (from https://spacebartest.org/css/dino.css)
+23:18:56	Error: 	"Not Found" (404) at link https://spacebartest.org/css/..static/assets/default_100_percent/100-error-offline.html (from https://spacebartest.org/css/corona-runner.css)
+23:18:56	Error: 	"Not Found" (404) at link https://spacebartest.org/css/..static/assets/default_200_percent/200-error-offline.html (from https://spacebartest.org/css/corona-runner.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 8 seconds : 227 links scanned, 219 files written (21141874 bytes overall) [5072422 bytes received at 74594 bytes/sec], 19512343 bytes transferred using HTTP compression in 164 files, ratio 15%, 15.1 requests per connection
+(7 errors, 1 warnings, 0 messages)
