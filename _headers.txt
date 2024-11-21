@@ -1,0 +1,2 @@
+/allowed-ids.json
+  Access-Control-Allow-Origin: *
