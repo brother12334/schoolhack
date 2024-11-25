@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 
-<!-- Mirrored from azgames.io/game/slope/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Nov 2024 01:36:18 GMT -->
+<!-- Mirrored from azgames.io/game/slope/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Nov 2024 01:40:35 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
   <meta charset="utf-8">
@@ -33,18 +33,13 @@
     const fullscreenButton = document.querySelector("#unity-fullscreen-button");
 
 
-
-    const buildUrl = "Build/index.html";
-    const loaderUrl = buildUrl + "/slope_green.loader.js";
-    const config = {
-      dataUrl: buildUrl + "/75a12480795d69d7eb97753652f8c188.data.unityweb",
-      frameworkUrl: buildUrl + "/5b58bd13dda215ad7ad0e03ae31cce01.js.unityweb",
-      codeUrl: buildUrl + "/2fc2580a929f20c350e2313364a57b5d.wasm.unityweb",
-      streamingAssetsUrl: "StreamingAssets",
-      companyName: "GM",
-      productName: "Slope",
-      productVersion: "1.1",
-    };
+const buildUrl = "./"; // Current directory
+const loaderUrl = buildUrl + "slope_green.loader.js"; // Ensure this matches the filename exactly
+const config = {
+  dataUrl: buildUrl + "/75a12480795d69d7eb97753652f8c188.data.unityweb",
+  frameworkUrl: buildUrl + "/5b58bd13dda215ad7ad0e03ae31cce01.js.unityweb",
+  codeUrl: buildUrl + "/2fc2580a929f20c350e2313364a57b5d.wasm.unityweb",
+};
 
 
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -185,5 +180,5 @@ window.gtag("config", firebaseConfig.measurementId, {
 </body>
 
 
-<!-- Mirrored from azgames.io/game/slope/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Nov 2024 01:36:21 GMT -->
+<!-- Mirrored from azgames.io/game/slope/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Nov 2024 01:40:38 GMT -->
 </html>

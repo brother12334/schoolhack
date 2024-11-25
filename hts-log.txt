@@ -1,18 +1,18 @@
-HTTrack3.49-2+htsswf+htsjava launched on Sun, 24 Nov 2024 20:36:18 at https://azgames.io/game/slope/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
-(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://azgames.io/game/slope/ -O1 "C:\My Web Sites\plzslopeeasuy" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 24 Nov 2024 20:40:34 at https://azgames.io/game/slope/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://azgames.io/game/slope/ -O1 "C:\My Web Sites\realjustslope" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
 
 Information, Warnings and Errors reported for this mirror:
 note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-20:36:23	Warning: 	Moved Permanently for azgames.io/robots.txt
-20:36:23	Warning: 	Redirected link is identical because of 'URL Hack' option: azgames.io/robots.txt and https://azgames.io/robots.txt
-20:36:23	Warning: 	Warning moved treated for azgames.io/robots.txt (real one is https://azgames.io/robots.txt)
-20:36:23	Warning: 	Moved Permanently for azgames.io/game/slope/Build/
-20:36:23	Warning: 	Redirected link is identical because of 'URL Hack' option: azgames.io/game/slope/Build/ and https://azgames.io/game/slope/Build/
-20:36:23	Warning: 	File has moved from azgames.io/game/slope/Build/ to https://azgames.io/game/slope/Build/
-20:36:23	Error: 	"Not Found" (404) at link https://azgames.io/game/slope/TemplateData/fullscreen-button.png (from https://azgames.io/game/slope/TemplateData/style.css)
+20:40:39	Warning: 	Moved Permanently for azgames.io/robots.txt
+20:40:39	Warning: 	Redirected link is identical because of 'URL Hack' option: azgames.io/robots.txt and https://azgames.io/robots.txt
+20:40:39	Warning: 	Warning moved treated for azgames.io/robots.txt (real one is https://azgames.io/robots.txt)
+20:40:39	Warning: 	Moved Permanently for azgames.io/game/slope/Build/
+20:40:39	Warning: 	Redirected link is identical because of 'URL Hack' option: azgames.io/game/slope/Build/ and https://azgames.io/game/slope/Build/
+20:40:39	Warning: 	File has moved from azgames.io/game/slope/Build/ to https://azgames.io/game/slope/Build/
+20:40:39	Error: 	"Not Found" (404) at link https://azgames.io/game/slope/TemplateData/fullscreen-button.png (from https://azgames.io/game/slope/TemplateData/style.css)
 
-HTTrack Website Copier/3.49-2 mirror complete in 5 seconds : 14 links scanned, 10 files written (602881 bytes overall) [612907 bytes received at 122581 bytes/sec], 8565 bytes transferred using HTTP compression in 4 files, ratio 37%, 2.1 requests per connection
+HTTrack Website Copier/3.49-2 mirror complete in 5 seconds : 14 links scanned, 10 files written (602881 bytes overall) [612916 bytes received at 122583 bytes/sec], 8565 bytes transferred using HTTP compression in 4 files, ratio 37%, 2.1 requests per connection
 (1 errors, 6 warnings, 0 messages)
