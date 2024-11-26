@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+<!-- Mirrored from azgames.io/game/slope/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Nov 2024 01:36:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Slope</title>
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" href="TemplateData/style.css">
+</head>
+
+<body class="dark">
+  <div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas"></canvas>
+  </div>
+  <div id="loading-cover" style="display:none;">
+    <div id="unity-loading-bar">
+      <canvas id="logo-canvas" style="position: absolute; background-color: black;">
+        <img src="loading3860.png?v=1" id="ld_bg">
+        <img src="loading_bg.png" id="ld_bar">
+        <img src="loading_fill.png" id="ld_fill">
+      </canvas>
+    </div>
+  </div>
+  <script>
+    const container = document.querySelector("#unity-container");
+    const canvas = document.querySelector("#unity-canvas");
+    const loadingCover = document.querySelector("#loading-cover");
+    const fullscreenButton = document.querySelector("#unity-fullscreen-button");
+
+
+
+    const buildUrl = "Build/index.html";
+    const loaderUrl = buildUrl + "/slope_green.loader.js";
+    const config = {
+      dataUrl: buildUrl + "/75a12480795d69d7eb97753652f8c188.data.unityweb",
+      frameworkUrl: buildUrl + "/5b58bd13dda215ad7ad0e03ae31cce01.js.unityweb",
+      codeUrl: buildUrl + "/2fc2580a929f20c350e2313364a57b5d.wasm.unityweb",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "GM",
+      productName: "Slope",
+      productVersion: "1.1",
+    };
+
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      container.className = "unity-mobile";
+      config.devicePixelRatio = 1;
+    }
+
+    loadingCover.style.display = "";
+
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(canvas, config, (progress) => {
+        //progressBarEmpty.style.display = "";
+        //progressBarFull.style.width = `${100 * progress}%`;
+        // console.log(progress);
+        logo_loading_percent = progress;
+        drawCanvas(progress);
+      }).then((unityInstance) => {
+        window.unityInstance = unityInstance;
+        setTimeout(() => {
+          loadingCover.style.display = "none";
+          logo_loaded = true;
+        }, 2000);
+      }).catch((message) => {
+        alert(message);
+      });
+    };
+
+    // setTimeout(() => {
+    //     var progress = 0.5;
+    //     logo_loading_percent = progress;
+    //     drawCanvas(progress);
+    //   }, 1000);
+
+    // var progress = 0;
+    // setInterval(() => {
+    //   logo_loading_percent = progress;
+    //   drawCanvas(progress);
+    //   progress += 0.01;
+    // }, 30);
+
+
+    var logo_loaded = false;
+    var logo_loading_percent = 0;
+
+    window.onresize = () => {
+      // console.log('onresize');
+      drawCanvas(logo_loading_percent);
+    }
+    window.onload = () => {
+      // console.log('onload');
+      drawCanvas(logo_loading_percent);
+    }
+
+    var logo_canvas = document.getElementById("logo-canvas");
+    function drawCanvas(_percent = 0) {
+      if (logo_loaded) {
+        return;
+      }
+      resizeLogoCanvas();
+      var ctx = logo_canvas.getContext("2d");
+      var ld_bg = document.getElementById("ld_bg");
+      var ld_bar = document.getElementById("ld_bar");
+      var ld_fill = document.getElementById("ld_fill");
+      var _sw = logo_canvas.width / 1920;
+      var _sh = logo_canvas.height / 1080;
+
+      if (_percent > 1) {
+        _percent = 1;
+      }
+
+      var pw = 1170 * _percent;
+      var pl = 375 + (1 - _percent);
+
+      // console.log(`${logo_canvas.width} ${logo_canvas.height}`);
+      ctx.drawImage(ld_bg, 0, 0, logo_canvas.width, logo_canvas.height);
+      ctx.drawImage(ld_bar, 355 * _sw, logo_canvas.height - (240 * _sh), 1210 * _sw, 48 * _sh);
+      ctx.drawImage(ld_fill, pl * _sw, logo_canvas.height - (226 * _sh), pw * _sw, 20 * _sh);
+    }
+    function resizeLogoCanvas() {
+      var _w = window.innerWidth;
+      var _h = window.innerHeight;
+      var _nw = _h * 16 / 9;
+      // console.log(`${_w} ${_h} ${_nw}`);
+      if (_nw <= _w) {
+        logo_canvas.width = _nw;
+        logo_canvas.height = _h;
+      }
+      else {
+        logo_canvas.width = _w;
+        logo_canvas.height = _w * 9 / 16;
+      }
+
+    }
+
+
+    document.body.appendChild(script);
+  </script>
+
+<script src="../../../www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+<script src="../../../www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+<script src="../../../www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+<script src="../../../www.gstatic.com/firebasejs/10.9.0/firebase-analytics-compat.js"></script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+  import { getAuth  } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDscyt_HYz8wywi0NCrCsHbulY6CVsgdG4",
+  authDomain: "slope-og.firebaseapp.com",
+  projectId: "slope-og",
+  storageBucket: "slope-og.appspot.com",
+  messagingSenderId: "937209795955",
+  appId: "1:937209795955:web:b9b46456c4b3c1f6ff2106",
+  measurementId: "G-VRBJ991XBE"
+};
+window.dataLayer = window.dataLayer || [];
+window.gtag = function(){dataLayer.push(arguments);}
+
+window.gtag("config", firebaseConfig.measurementId, {
+    cookie_domain: location.hostname,
+    cookie_flags: "SameSite=None;Secure",
+});
+  // Initialize Firebase
+
+  const app = firebase.initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+</script>
+
+</body>
+
+
+<!-- Mirrored from azgames.io/game/slope/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Nov 2024 01:36:07 GMT -->
+</html>
